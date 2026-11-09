@@ -1,6 +1,7 @@
 name: Run E2E Synthetic tests
 
-on: push
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on: push
 
 jobs:
   e2e:

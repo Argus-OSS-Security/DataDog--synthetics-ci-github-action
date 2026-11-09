@@ -2,7 +2,8 @@
 
 name: Check dependencies license
 
-on: push
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on: push
 
 jobs:
   check-license-3rdparty:

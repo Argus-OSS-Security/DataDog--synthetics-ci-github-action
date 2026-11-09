@@ -2,7 +2,8 @@
 
 name: Check release version
 
-on: push
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on: push
 
 jobs:
   check-release-version:

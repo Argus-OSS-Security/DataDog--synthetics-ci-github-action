@@ -1,11 +1,12 @@
 # This workflow automatically creates a GitHub release when a release PR is merged.
 
 name: On Release PR merged
-on:
-  pull_request:
-    types:
-      - closed
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request:
+#     types:
+#       - closed
+# 
 jobs:
   release-version-on-merge:
     if: github.event.pull_request.merged == true && startsWith(github.event.pull_request.title, '[release:')
